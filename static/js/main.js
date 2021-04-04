@@ -25,7 +25,7 @@ function startCamera() {
     video.play();
     setInterval(function() {
       startVideoProcessing()
-    }, 1000);
+    }, 500);
   })
     .catch(function(err) {
     console.log("An error occured! " + err);
@@ -76,7 +76,7 @@ function startVideoProcessing() {
   //imporved method-------------------
   var xhr = new XMLHttpRequest();
   xhr.open("POST", "/video", true);
-  xhr.responseType = "image/jpeg";
+  xhr.responseType = "text";
   xhr.onload = response;
   xhr.send(dataURL);
 }
