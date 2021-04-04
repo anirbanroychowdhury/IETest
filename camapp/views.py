@@ -3,13 +3,7 @@ from django.http import StreamingHttpResponse, HttpResponse
 from camapp.camera import *
 from camapp.process import *
 from django.views.decorators.csrf import csrf_exempt
-import cv2 as cv2
-import dlib
-import base64
-from scipy.spatial import distance as dist
-import numpy as np
 from PIL import Image
-from threading import Thread
 import time
 from django.core.files.base import ContentFile
 import io
