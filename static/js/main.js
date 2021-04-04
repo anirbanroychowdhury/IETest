@@ -75,7 +75,7 @@ function startVideoProcessing() {
   //   });
   //imporved method-------------------
   var xhr = new XMLHttpRequest();
-  xhr.open("POST", "http://127.0.0.1:8000/video", true);
+  xhr.open("POST", "/video", true);
   xhr.responseType = "image/jpeg";
   xhr.onload = response;
   xhr.send(dataURL);
